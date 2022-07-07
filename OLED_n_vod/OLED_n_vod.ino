@@ -10,7 +10,7 @@
  */
 
 
-#define i2c_Address 0x3c //Na této adrese je displej, pokud nebude fungoval zkuste vyměnit za 0x3d
+#define i2c_Address 0x3c //Na této adrese je displej, pokud nebude fungovat zkuste vyměnit za 0x3d
 Adafruit_SH1106G display = Adafruit_SH1106G(128, 64, &Wire, -1); //Přiřadí displej, tloušťku a výšku
 
 #define w 16
@@ -37,20 +37,20 @@ static const unsigned char PROGMEM bitmap[] =
 
 void setup() {
   
-  delay(250); // počká než se OLED zapne
-  display.begin(i2c_Address, true); //začne displej
+  delay(250); // Počká než se OLED zapne
+  display.begin(i2c_Address, true); //Začne displej 
   display.display();
   delay(2000);
-  display.clearDisplay(); //Vyčistí displej
+  display.clearDisplay(); //Vyčistí displej, nutné zavolat display.display()
   //display.setContrast (100); //Nastavý světlost displeje pokud to umí
 
   //Zobrazí pixel drawPixel(x souřadnice, y souřadnice, barva pixelu (pro více barevné displeje.))
   display.drawPixel(10, 10, SH110X_WHITE); 
-  display.display(); //po každém malovacím povelu, povel .display() vykreslí zedané obrazce
+  display.display(); //Po každém malovacím povelu, povel .display() vykreslí zedané obrazce
   delay(2000); 
   display.clearDisplay();
 
-  //lze tak vykreslit i více pixelů nebo obrazců najednou
+  //Lze tak vykreslit i více pixelů nebo obrazců najednou
   int x=10;
   int y=10;
   display.drawPixel(x-1, y, SH110X_WHITE);
