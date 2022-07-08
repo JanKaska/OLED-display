@@ -18,7 +18,7 @@ void setup() {
   display.clearDisplay();
   display.setTextSize(2); // Nastavte 1 pokud chcete mít celý text na jednom řádku
   display.setTextColor(SH110X_WHITE);
-  sht4.begin())//Začne senzor 
+  sht4.begin();//Začne senzor 
   sht4.setPrecision(SHT4X_HIGH_PRECISION);sht4.setHeater(SHT4X_NO_HEATER); //Nastavení senzoru
 }
 
@@ -33,6 +33,6 @@ void loop() {
   display.println((String)"Teplota:"+temp.temperature+"C"); //Zobrazí teplotu na display
   display.println((String)"Vlhkost:"+humidity.relative_humidity+"%"); //Zobrazí vlhkost na display
   display.display(); 
-  delay(1000);
+  delay(500);
   display.clearDisplay();
 }
