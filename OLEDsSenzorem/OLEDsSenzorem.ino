@@ -9,7 +9,6 @@ Adafruit_SHT4x sht4 = Adafruit_SHT4x(); //Přiřadí senzor
 Adafruit_SH1106G display = Adafruit_SH1106G(128, 64, &Wire, -1); //Přiřadí displej, tloušťku a výšku
 
 void setup() {
-  // put your setup code here, to run once:
   Serial.begin(57600);
   delay(250); // počká než se OLED zapne
   display.begin(i2c_Address, true); //začne displej
@@ -23,8 +22,6 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-  
   sensors_event_t humidity, temp;
   sht4.getEvent(&humidity, &temp);
   Serial.println(temp.temperature); //Vypíše teplotu pro kontorolu do Seriálu
