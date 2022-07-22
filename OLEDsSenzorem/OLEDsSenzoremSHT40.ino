@@ -1,3 +1,15 @@
+/*
+ * EXAMPLE CODE FOR OLED DISPLAY WITH SHT40 SENSOR
+ * Reading data from SHT40 and displaying them on the OLED
+ *
+ * https://github.com/LasKKit/
+ * laskarduino.cz
+ * 2022
+ *
+ * Compile it as "ESP32-WROOM-DA"
+ *
+ *  https://www.laskakit.cz/laskakit-sht40-senzor-teploty-a-vlhkosti-vzduchu/
+ */
 #include <SPI.h>
 #include <Wire.h>
 #include <Adafruit_GFX.h>
