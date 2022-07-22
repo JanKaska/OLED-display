@@ -2,7 +2,7 @@
  * EXAMPLE CODE FOR MAX17048
  * REading data from MAX17048 module
  *
- * https://github.com/LasKKit/ESP12-Board
+ * https://github.com/LasKKit/
  * laskarduino.cz
  * 2022
  *
