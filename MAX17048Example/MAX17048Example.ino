@@ -1,3 +1,16 @@
+/*
+ * EXAMPLE CODE FOR MAX17048
+ * REading data from MAX17048 module
+ *
+ * https://github.com/LasKKit/ESP12-Board
+ * laskarduino.cz
+ * 2022
+ *
+ * Compile it as "ESP32-WROOM-DA"
+ *
+ *  Produkt jeste neni.
+ */
+
 
 #include <SPI.h>
 #include <Wire.h>
