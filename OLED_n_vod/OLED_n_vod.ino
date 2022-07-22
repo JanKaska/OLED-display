@@ -1,3 +1,16 @@
+/*
+ * EXAMPLE CODE FOR OLED display with SH1106 driver IC
+ * Composing and displayng images on the display 
+ *
+ * https://github.com/LasKKit/
+ * laskarduino.cz
+ * 2022
+ *
+ * Compile it as "ESP32-WROOM-DA"
+ *
+ *  Produkt jeste neni.
+ */
+
 #include <SPI.h>
 #include <Wire.h>
 #include <Adafruit_GFX.h>
