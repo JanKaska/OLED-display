@@ -1,3 +1,16 @@
+/*
+ * EXAMPLE CODE FOR MAX17048 and OLED display with SH1106 driver IC 
+ * REading data from MAX17048 and displaying them on the OLED.
+ *
+ * https://github.com/LasKKit/
+ * laskarduino.cz
+ * 2022
+ *
+ * Compile it as "ESP32-WROOM-DA"
+ *
+ *  Produkt jeste neni.
+ *  Produkt jeste neni.
+ */
 #include <SPI.h>
 #include <Wire.h>
 #include <Adafruit_GFX.h>
